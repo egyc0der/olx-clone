@@ -1,12 +1,16 @@
 import styled from "@emotion/styled";
 import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlined";
+
 const Cont = styled.div`
-	height: ${(props) => (props.type === "Ads" ? "250px" : "500px")};
-	width: ${(props) => (props.type === "Ads" ? "250px" : "380px")};
+	height: 400px;
+	width: 360px;
 	border: 2px solid gray;
 	margin: 5px;
 	display: flex;
 	flex-direction: column;
+	@media only screen and (max-width: 390px) {
+		width: 330px;
+	}
 `;
 const Upper = styled.div`
 	flex-basis: 50%;
@@ -28,36 +32,39 @@ const Down = styled.div`
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	padding:5px;	
+	padding: 5px;
 `;
 
 const Title = styled.span`
 	font-weight: 500;
-	font-size: ${props => props.type === 'Ads' ? '20px' : '1.2vw'};
+	font-size: 25px;
+	@media only screen and (max-width: 390px) {
+		font-size: 25px;
+	}
 `;
 
 const Price = styled.span`
-	font-weight:700;
-	font-size: ${props => props.type === 'Ads' ? '18px' : '1.5vw'};
+	font-weight: 700;
+	font-size: 30px;
 `;
 
 const Specs = styled.span`
 	font-weight: 200;
-	font-size: ${(props) => (props.type === "Ads" ? "15px" : "1.2vw")};
+	font-size: 25px;
 `;
 
 const Place = styled.span`
 	font-weight: 200;
-	font-size: ${(props) => (props.type === "Ads" ? "15px" : "1.2vw")};
+	font-size: 25px;
 `;
 
 const PostTime = styled.span`
 	font-weight: 200;
-	font-size: ${(props) => (props.type === "Ads" ? "15px" : "1.2vw")};
+	font-size: 25px;
 `;
 
 const Item = ({ item }) => {
-	console.log('item from Item',item)
+	console.log("item from Item", item);
 	return (
 		<Cont>
 			<Upper>

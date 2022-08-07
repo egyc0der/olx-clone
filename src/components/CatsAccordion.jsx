@@ -56,7 +56,7 @@ const LI = styled.li`
 const CatsAccordion = () => {
   return (
     <Cont>
-        <Accordion disableGutters elevation={0}>
+        <Accordion elevation={0}>
             <AccordionSummary>
                 <Typography sx={{fontSize:'0.8rem',color:'#002f34',fontWeight:700}} >ALL CATEGORIES</Typography>
             </AccordionSummary>

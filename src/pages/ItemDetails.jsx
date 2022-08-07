@@ -21,10 +21,18 @@ const CatPath = styled.div`
 const ItemCont = styled.div`
 	margin-top: 20px;
 	display: flex;
+	@media only screen and (max-width: 390px) {
+		flex-direction:column;
+		align-items: center;
+		justify-content: center;
+	}
 `;
 
 const Left = styled.div`
 	flex: 1.5;
+	@media only screen and (max-width: 390px) {
+		flex: 1;
+	}
 `;
 
 const ImageSliderWr = styled.div`
@@ -114,6 +122,9 @@ const Right = styled.div`
 	display: flex;
 	flex-direction: column;
 	margin-left: 15px;
+	@media only screen and (max-width: 390px) {
+		margin-left:0;
+	}
 `;
 
 const Price = styled.div`
@@ -122,6 +133,7 @@ const Price = styled.div`
 	border-radius: 5px;
 	display: flex;
 	padding: 25px;
+	
 `;
 
 const PriceLeft = styled.div`

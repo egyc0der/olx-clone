@@ -4,12 +4,17 @@ import { Search } from '@mui/icons-material'
 import { Link } from 'react-router-dom';
 
 const NavCont = styled(Box)`
+	position:sticky;
+	top:0;
+	left:0;
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
+	width:100vw;
 	gap: 15px;
 	height: 70px;
 	padding: 0 20px;
+	z-index:999999;
 	background-color: #f7f8f8;
 	@media (min-width: 1800px) {
 		padding: 0 10rem;
@@ -22,7 +27,11 @@ const LogoWr = styled.div`
 
 const Logo = styled.img`
 `
-
+const Span = styled.span`
+	@media only screen and (max-width: 390px) {
+		display: none;
+	}
+`;
 const SearchLocWr = styled(Box)`
 	flex: 1;
 	height: 60%;
@@ -34,6 +43,9 @@ const SearchLocWr = styled(Box)`
 	padding: 5px;
 	color: #002f34;
 	background-color: white;
+	@media only screen and (max-width: 390px) {
+		display:none;
+	}
 `;
 const SearchLoc = styled.input`
     width:100%;
@@ -85,13 +97,19 @@ const SearchIconWr = styled.div`
     padding:10px;
 `
 const BtnWr = styled.div`
-    background-image:url(https://www.olx.com.eg/assets/iconSellBorder_noinline.d9eebe038fbfae9f90fd61d971037e02.svg);
-    height:48px;
-    width:104px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-`
+	background-image: url(https://www.olx.com.eg/assets/iconSellBorder_noinline.d9eebe038fbfae9f90fd61d971037e02.svg);
+	height: 48px;
+	width: 104px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	@media only screen and (max-width: 390px) {
+		position:fixed;
+		top:96%;
+		left:50%;
+		transform:translate(-50%,-50%)
+	}
+`;
 const Button = styled.button`
     background:none;
     border:none;
@@ -121,8 +139,8 @@ const Navbar = () => {
 					<Search sx={{ fontSize: "30px" }} />
 				</SearchIconWr>
 			</SearchItemsWr>
-			<span>العربية</span>
-			<span>Login</span>
+			<Span>العربية</Span>
+			<Span>Login</Span>
 			<BtnWr>
 				<Link to="/sell">
 					<Button>+ SELL</Button>

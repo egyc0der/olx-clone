@@ -1,11 +1,16 @@
 import styled from '@emotion/styled'
 
 const Cont = styled.div`
-    width:100%;
-    height:180px;
-    display: flex;align-items: center;justify-content: center;
-    margin-top:1rem;
-`
+	width: 100%;
+	height: 180px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 1rem;
+	@media only screen and (max-width: 390px) {
+		display:none;
+	}
+`;
 
 const SliderWr = styled.div`
     width:100%;height:100%;

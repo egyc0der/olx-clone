@@ -6,7 +6,10 @@ const Cont = styled.div`
 	display: flex;
 	@media (min-width: 1800px) {
 		padding: 0 10rem;
-	}
+	};
+	@media only screen and (max-width: 390px) {
+		flex-direction:column;
+	};
 `;
 
 const LinksWr = styled.div`

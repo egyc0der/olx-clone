@@ -4,6 +4,9 @@ const Cont = styled.div`
 	margin: 2rem 0;
 	display: flex;
 	background-color: rgba(0, 47, 52, 0.03);
+	@media only screen and (max-width: 390px) {
+		display: none;
+	}
 `;
 const Left = styled.div`
     flex:1;

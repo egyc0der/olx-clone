@@ -7,8 +7,7 @@ import Footer from "./components/Footer";
 import ItemDetails from "./pages/ItemDetails";
 import CreateAdd from "./pages/CreateAdd";
 
-const GlobalCont = styled.div`
-	overflow: auto;
+const GlobalCont = styled.div`	
 `;
 const Hr = styled.hr`
 	border: 0.5px solid #e7ebeb;

@@ -3,11 +3,9 @@ import styled from "@emotion/styled";
 import { Box, Grid } from "@mui/material";
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
-import axios from 'axios';
+import axios from "axios";
 
-
-const Cont = styled.div`
-`;
+const Cont = styled.div``;
 const Title = styled.span`
 	display: inline-block;
 	margin: 20px 0;
@@ -20,31 +18,33 @@ const ItemsCont = styled.div`
 	background-color: rgba(1, 1, 1, 0.1);
 `;
 const Items = () => {
+	const [items, setItems] = useState([]);
 
-	const [items,setItems] = useState([]);
-
-	useEffect(()=>{
+	useEffect(() => {
 		const getProducts = async () => {
-			try{
+			try {
 				const res = await axios.get(
-					"https://immense-plateau-15059.herokuapp.com/api/ads//all"
+					"https://immense-plateau-15059.herokuapp.com/api/ads/all"
 				);
-				setItems(res.data)
-			}catch(err){
-				console.log(err)
+				setItems(res.data);
+			} catch (err) {
+				console.log(err);
 			}
-		}
+		};
 		getProducts();
-	},[])
+	}, []);
 
-	console.log('items',items)
+	console.log("items", items);
 	return (
 		<Cont>
 			<Title>Fresh Recomendations</Title>
-			<Grid container spacing={0} columns={{ xs: 0, sm: 8, md: 12, lg: 16 }}>
+			<Grid container spacing={0} columns={{ xs: 1, sm: 2, md: 6, lg: 8 }}>
 				{items?.map((item, index) => (
-					<Grid item xs={2} sm={4} md={4} key={index}>
-						<Link style={{textDecoration:'none',color:'inherit'}} to={`/item/${item._id}`}>
+					<Grid item xs={1} sm={1} md={2} key={index}>
+						<Link
+							style={{ textDecoration: "none", color: "inherit" }}
+							to={`/item/${item._id}`}
+						>
 							<Item item={item} />
 						</Link>
 					</Grid>
@@ -55,7 +55,7 @@ const Items = () => {
 };
 
 export default Items;
-	/* <Cont>
+/* <Cont>
 			
 			<ItemsCont>
 				<Item />

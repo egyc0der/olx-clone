@@ -3,12 +3,8 @@ import { Button, TextField, Typography } from "@mui/material";
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { Navigate, useNavigate } from "react-router-dom";
-import { ToastContainer, toast } from "react-toastify";
+import { toast , ToastContainer} from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-
-
-
-
 const Cont = styled.div`
 	width: 100%;
 	display: flex;
@@ -56,8 +52,6 @@ const Right = styled.div`
 	align-items: flex-end;
 `;
 
-
-
 const CreateAdd = () => {
 	const [formData, setFormData] = useState({});
 	const [readyToSubmit, setReadyToSubmit] = useState(false);
@@ -71,9 +65,8 @@ const CreateAdd = () => {
 					"https://immense-plateau-15059.herokuapp.com/api/ads/",
 					formData
 				);
-				res.data &&
-					setSuccess(true)
-					
+				res.data && setSuccess(true);
+
 				console.log(res.data);
 			} catch (error) {
 				console.log(error);
@@ -84,9 +77,9 @@ const CreateAdd = () => {
 		}
 	}, [formData, readyToSubmit]);
 
-	useEffect(()=>{
-		success && toast.success("successful", { autoClose: 3000 }) && navigate("/");
-	},[success])
+	useEffect(() => {
+		success && notify() 
+	}, [success]);
 
 	const handleChange = (e) => {
 		setFormData((prev) => {
@@ -108,6 +101,12 @@ const CreateAdd = () => {
 	const handleSubmit = (e) => {
 		e.preventDefault();
 		setReadyToSubmit(true);
+	};
+	const notify = () => {
+		toast.success("Success Notification !", {
+			position: toast.POSITION.TOP_CENTER,
+		});
+		navigate('/');
 	};
 	return (
 		<Cont>
@@ -251,6 +250,7 @@ const CreateAdd = () => {
 					Submit
 				</Button>
 			</Form>
+			<ToastContainer />
 		</Cont>
 	);
 };

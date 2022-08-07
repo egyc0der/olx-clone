@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/olx-clone/static/css/main.3d10672c.css",
-    "main.js": "/olx-clone/static/js/main.65a8be7b.js",
+    "main.js": "/olx-clone/static/js/main.47a2a98c.js",
     "index.html": "/olx-clone/index.html",
     "main.3d10672c.css.map": "/olx-clone/static/css/main.3d10672c.css.map",
-    "main.65a8be7b.js.map": "/olx-clone/static/js/main.65a8be7b.js.map"
+    "main.47a2a98c.js.map": "/olx-clone/static/js/main.47a2a98c.js.map"
   },
   "entrypoints": [
     "static/css/main.3d10672c.css",
-    "static/js/main.65a8be7b.js"
+    "static/js/main.47a2a98c.js"
   ]
 }

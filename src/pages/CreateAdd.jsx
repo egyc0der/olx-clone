@@ -68,7 +68,7 @@ const CreateAdd = () => {
 		const saveAd = async () => {
 			try {
 				const res = await axios.post(
-					"http://localhost:5010/api/ads/",
+					"https://immense-plateau-15059.herokuapp.com/api/ads/",
 					formData
 				);
 				res.data &&

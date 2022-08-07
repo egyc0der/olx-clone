@@ -289,7 +289,7 @@ const ItemDetails = () => {
 	useEffect(()=>{
 		const getAdd = async () => {
 			try {
-				const res = await axios.get(`http://localhost:5010/api/ads/${adId}`);
+				const res = await axios.get(`https://immense-plateau-15059.herokuapp.com/api/ads/${adId}`);
 				setAdd(res.data)
 
 			} catch (error) {

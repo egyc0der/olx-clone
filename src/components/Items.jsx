@@ -26,7 +26,9 @@ const Items = () => {
 	useEffect(()=>{
 		const getProducts = async () => {
 			try{
-				const res = await axios.get('http://localhost:5010/api/ads/all')
+				const res = await axios.get(
+					"https://immense-plateau-15059.herokuapp.com/api/ads//all"
+				);
 				setItems(res.data)
 			}catch(err){
 				console.log(err)

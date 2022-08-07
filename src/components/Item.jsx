@@ -8,6 +8,11 @@ const Cont = styled.div`
 	margin: 5px;
 	display: flex;
 	flex-direction: column;
+	&:hover {
+		transform: scaleX(1.1);
+		background-color: #8fe3cf44;
+		transition: all 0.5s ease-in-out;
+	}
 	@media only screen and (max-width: 390px) {
 		width: 330px;
 	}

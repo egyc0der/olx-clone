@@ -5,7 +5,9 @@ import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import axios from "axios";
 
-const Cont = styled.div``;
+const Cont = styled.div`
+	padding-bottom:30px;
+`;
 const Title = styled.span`
 	display: inline-block;
 	margin: 20px 0;

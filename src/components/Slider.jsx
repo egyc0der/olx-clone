@@ -27,13 +27,12 @@ const Img = styled.img`
 
 const Slider = () => {
   return (
-    <Cont>
-        <SliderWr>
-            <Img src='https://images.olx.com.eg/thumbnails/19751797-800x600.webp' alt='' />
-        </SliderWr>
-        
-    </Cont>
-  )
+		<Cont>
+			<SliderWr>
+				<Img src='https://i.ibb.co/9Zwm2Dx/click4ebusi-Banner.png' alt='' />
+			</SliderWr>
+		</Cont>
+	);
 }
 
 export default Slider

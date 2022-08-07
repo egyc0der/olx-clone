@@ -16,7 +16,7 @@ const Cont = styled.div`
 `;
 
 const CatPath = styled.div`
-	color: rgba(0, 47, 52, 0.64);
+	color: white;
 `;
 const ItemCont = styled.div`
 	margin-top: 20px;
@@ -49,11 +49,16 @@ const ImageSlider = styled.div`
 	width: 100%;
 	height: 500px;
 	background-color: black;
+	
 `;
 
 const Image = styled.img`
 	width: 80%;
 	height: 100%;
+	@media only screen and (max-width: 390px) {
+		object-fit: cover;
+		width:100%
+	}
 `;
 
 const Thumbs = styled.div`
@@ -83,6 +88,9 @@ const DetailsCont = styled.div`
 	display: flex;
 	flex-wrap: wrap;
 	width: 100%;
+	@media only screen and (max-width: 390px) {
+		flex-direction:column;
+	}
 `;
 
 const DetailItem = styled.div`

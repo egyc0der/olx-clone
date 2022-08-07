@@ -3,6 +3,8 @@ import styled from '@emotion/styled'
 const Cont = styled.div`
 	margin: 2rem 0;
 	display: flex;
+	align-items: center;
+	justify-content: center;
 	background-color: rgba(0, 47, 52, 0.03);
 	@media only screen and (max-width: 390px) {
 		display: none;
@@ -10,10 +12,16 @@ const Cont = styled.div`
 `;
 const Left = styled.div`
     flex:1;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	margin-right:20px;
 `
 
 const Image = styled.img`
-    
+    width:200px;
+	height:200px;
+	border-radius:50%;
 `
 
 const Middle = styled.div`
@@ -59,10 +67,10 @@ const MobileAppBanner = () => {
   return (
 		<Cont>
 			<Left>
-				<Image src='https://www.olx.com.eg/assets/olxMobileApp.f5579f77e849b600ad60857e46165516.webp' />
+				<Image src='https://pps.whatsapp.net/v/t61.24694-24/292196186_164264006110830_6725763650638479743_n.jpg?ccb=11-4&oh=01_AVwbQ25Olq47PY1EoxPzG9MHD6PX3oWKsZv4OsU3jRDPXw&oe=63003607' />
 			</Left>
 			<Middle>
-				<Try>TRY THE OLX APP</Try>
+				<Try>Try our Mobile App!</Try>
 				<Desc>
 					Buy, sell and find just about anything using the app on your mobile.
 				</Desc>

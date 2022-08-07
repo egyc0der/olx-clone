@@ -8,14 +8,13 @@ import ItemDetails from "./pages/ItemDetails";
 import CreateAdd from "./pages/CreateAdd";
 
 const GlobalCont = styled.div`	
-`;
-const Hr = styled.hr`
-	border: 0.5px solid #e7ebeb;
-
+	display: flex;
+	flex-direction:column;
 `;
 const AppCont = styled.div`
 	padding: 0 1.5rem;
-
+	background-color:#2B4865 ;
+	color:white;
 	@media (min-width: 1800px) {
 		padding: 0 10rem;
 	}
@@ -27,7 +26,7 @@ function App() {
 			<GlobalCont>
 				<Navbar />
 				<CatsAccordion />
-				<Hr />
+				{/* <Hr /> */}
 				<AppCont>
 					<Routes>
 						<Route path='/' element={<Home />} />

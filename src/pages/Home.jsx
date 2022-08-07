@@ -13,9 +13,9 @@ const Home = () => {
   return (
     <div>
 
-        <Slider />
+        {/* <Slider /> */}
         <Items page='Home'/>
-        <MobileAppBanner />
+        {/* <MobileAppBanner /> */}
 
     </div>
   )

@@ -2,48 +2,32 @@ import styled from "@emotion/styled";
 import {  Facebook, Instagram, Twitter, YouTube } from "@mui/icons-material";
 
 const Cont = styled.div`
-	background-color: rgba(0, 47, 52, 0.2);
+	background-color: #002b5b;
+	color: white;
 	display: flex;
-	@media (min-width: 1800px) {
-		padding: 0 10rem;
-	};
+	padding: 2rem 10rem;
 	@media only screen and (max-width: 390px) {
-		flex-direction:column;
-	};
+		flex-direction: column;
+	} ;
 `;
 
-const LinksWr = styled.div`
-    flex:1;
-    width:2rem;
-    height:150px;
-    display: flex;
-    flex-direction:column;
+const Left = styled.div`
+	flex:1;
+`
+const Image = styled.img`
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
 `;
 
-
-const UL = styled.ul`
-	display: grid;
-	grid-template-rows: repeat(5, min-content);
-	grid-auto-flow: column;
-	width: 230px;
-	margin-bottom: 1rem;
-`;
-
-const ListTitle = styled.div`
-	font-size: 0.9rem;
-	font-weight: 700;
-	margin-bottom: 0.9rem;
-    margin-left:2.5rem;
-    margin-top:0.5rem;
-`;
-
-const LI = styled.li`
-	font-size: 0.8rem;
-	list-style: none;
-	margin-bottom: 0.3rem;
-`;
 const Right = styled.div`
 	flex: 2;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	@media only screen and (max-width: 390px) {
+		flex-direction: column;
+	} ;
 `;
 
 const Upper = styled.div`
@@ -64,6 +48,7 @@ const SocialIcon = styled.div`
     height:50px;
     border-radius:50%;
     color:black;
+	color:white;
 `;
 
 const AppsWr = styled.div`
@@ -85,38 +70,9 @@ const AppIcon = styled.img`
 const Footer = () => {
 	return (
 		<Cont>
-			<LinksWr>
-				<ListTitle>ABOUT US</ListTitle>
-				<UL>
-					<LI>About EMPG</LI>
-					<LI>Careers</LI>
-					<LI>Contact Us</LI>
-					<LI>OLX for Businesses</LI>
-				</UL>
-			</LinksWr>
-			<LinksWr>
-				<ListTitle>OLX</ListTitle>
-				<UL>
-					<LI>Help</LI>
-					<LI>Sitemap</LI>
-					<LI>Terms of use</LI>
-					<LI>Privacy Policy</LI>
-				</UL>
-			</LinksWr>
-			<LinksWr>
-				<ListTitle>COUNTRIES</ListTitle>
-				<UL>
-					<LI>Bahrain</LI>
-					<LI>Jordan</LI>
-					<LI>Kuwait</LI>
-					<LI>Lebanon</LI>
-					<LI>Oman</LI>
-					<LI>Pakistan</LI>
-					<LI>Qatar</LI>
-					<LI>Saudi Arabia</LI>
-					<LI>UAE</LI>
-				</UL>
-			</LinksWr>
+			<Left>
+				<Image src='https://pps.whatsapp.net/v/t61.24694-24/292196186_164264006110830_6725763650638479743_n.jpg?ccb=11-4&oh=01_AVwbQ25Olq47PY1EoxPzG9MHD6PX3oWKsZv4OsU3jRDPXw&oe=63003607' />
+			</Left>
 			<Right>
 				<Upper>
 					<FollowTxt>FOLLOW US ON</FollowTxt>

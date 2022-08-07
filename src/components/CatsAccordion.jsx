@@ -9,6 +9,8 @@ import styled from '@emotion/styled';
 
 const Cont = styled.div`
 	padding: 0 1.5rem;
+	background-color: #256d85;
+	color: "white";
 	@media (min-width: 1800px) {
 		padding: 0 10rem;
 	}
@@ -16,25 +18,25 @@ const Cont = styled.div`
 
 
 const AccordionSummary = st((props) => (
-    <MuiAccordionSummary
-      expandIcon={<ExpandMoreIcon  sx={{ fontSize: '1.4rem' }} />}
-      {...props}
-    />
-  ))(() => ({
-    width: 'fit-content',
-    padding:0,
-    '& .MuiAccordionSummary-expandIconWrapper.Mui-expanded': {
-      transform: 'rotate(180deg)',
-    },
-    color:'#002f34',
-  }));
+	<MuiAccordionSummary
+		expandIcon={<ExpandMoreIcon sx={{ fontSize: "1.4rem" }} />}
+		{...props}
+	/>
+))(() => ({
+	width: "fit-content",
+	padding: 0,
+	"& .MuiAccordionSummary-expandIconWrapper.Mui-expanded": {
+		transform: "rotate(180deg)",
+	},
+	color: 'white',
+}));
 
 
 const CatWr = styled.div`
-    color:#002f34;
-    display: flex;
-    flex-wrap: wrap;
-`
+	display: flex;
+	flex-wrap: wrap;
+	color: "white";
+`;
 
 const UL = styled.ul`
     width:230px;
@@ -55,72 +57,76 @@ const LI = styled.li`
 `
 const CatsAccordion = () => {
   return (
-    <Cont>
-        <Accordion elevation={0}>
-            <AccordionSummary>
-                <Typography sx={{fontSize:'0.8rem',color:'#002f34',fontWeight:700}} >ALL CATEGORIES</Typography>
-            </AccordionSummary>
-            <AccordionDetails>
-                <CatWr>
-                    <UL> 
-                        <ListTitle>Vehicles</ListTitle>
-                        <LI>Cars for Sale</LI>
-                        <LI>Cars for Rent</LI>
-                        <LI>Tyres, Batteries, Oils, & Accessories</LI>
-                        <LI>Car Spare Parts</LI>
-                        <LI>Boats - Watercraft</LI>
-                        <LI>Heavy Trucks, Buses & Other Vehicles</LI>
-                    </UL>
-                    <UL> 
-                        <ListTitle>Vehicles</ListTitle>
-                        <LI>Cars for Sale</LI>
-                        <LI>Cars for Rent</LI>
-                        <LI>Tyres, Batteries, Oils, & Accessories</LI>
-                        <LI>Car Spare Parts</LI>
-                        <LI>Boats - Watercraft</LI>
-                        <LI>Heavy Trucks, Buses & Other Vehicles</LI>
-                    </UL>
-                    <UL> 
-                        <ListTitle>Vehicles</ListTitle>
-                        <LI>Cars for Sale</LI>
-                        <LI>Cars for Rent</LI>
-                        <LI>Tyres, Batteries, Oils, & Accessories</LI>
-                        <LI>Car Spare Parts</LI>
-                        <LI>Boats - Watercraft</LI>
-                        <LI>Heavy Trucks, Buses & Other Vehicles</LI>
-                    </UL>
-                    <UL> 
-                        <ListTitle>Vehicles</ListTitle>
-                        <LI>Cars for Sale</LI>
-                        <LI>Cars for Rent</LI>
-                        <LI>Tyres, Batteries, Oils, & Accessories</LI>
-                        <LI>Car Spare Parts</LI>
-                        <LI>Boats - Watercraft</LI>
-                        <LI>Heavy Trucks, Buses & Other Vehicles</LI>
-                    </UL>
-                    <UL> 
-                        <ListTitle>Vehicles</ListTitle>
-                        <LI>Cars for Sale</LI>
-                        <LI>Cars for Rent</LI>
-                        <LI>Tyres, Batteries, Oils, & Accessories</LI>
-                        <LI>Car Spare Parts</LI>
-                        <LI>Boats - Watercraft</LI>
-                        <LI>Heavy Trucks, Buses & Other Vehicles</LI>
-                    </UL>
-                    <UL> 
-                        <ListTitle>Vehicles</ListTitle>
-                        <LI>Cars for Sale</LI>
-                        <LI>Cars for Rent</LI>
-                        <LI>Tyres, Batteries, Oils, & Accessories</LI>
-                        <LI>Car Spare Parts</LI>
-                        <LI>Boats - Watercraft</LI>
-                        <LI>Heavy Trucks, Buses & Other Vehicles</LI>
-                    </UL>
-                </CatWr>
-            </AccordionDetails>
-        </Accordion>
-    </Cont>
-  )
+		<Cont>
+			<Accordion sx={{ backgroundColor: "#256D85" }} elevation={0}>
+				<AccordionSummary sx={{ backgroundColor: "#256D85" }}>
+					<Typography
+						sx={{ fontSize: "0.8rem", color: "white", fontWeight: 700 }}
+					>
+						ALL CATEGORIES
+					</Typography>
+				</AccordionSummary>
+				<AccordionDetails sx={{color:'white'}}>
+					<CatWr>
+						<UL>
+							<ListTitle>Vehicles</ListTitle>
+							<LI>Cars for Sale</LI>
+							<LI>Cars for Rent</LI>
+							<LI>Tyres, Batteries, Oils, & Accessories</LI>
+							<LI>Car Spare Parts</LI>
+							<LI>Boats - Watercraft</LI>
+							<LI>Heavy Trucks, Buses & Other Vehicles</LI>
+						</UL>
+						<UL>
+							<ListTitle>Vehicles</ListTitle>
+							<LI>Cars for Sale</LI>
+							<LI>Cars for Rent</LI>
+							<LI>Tyres, Batteries, Oils, & Accessories</LI>
+							<LI>Car Spare Parts</LI>
+							<LI>Boats - Watercraft</LI>
+							<LI>Heavy Trucks, Buses & Other Vehicles</LI>
+						</UL>
+						<UL>
+							<ListTitle>Vehicles</ListTitle>
+							<LI>Cars for Sale</LI>
+							<LI>Cars for Rent</LI>
+							<LI>Tyres, Batteries, Oils, & Accessories</LI>
+							<LI>Car Spare Parts</LI>
+							<LI>Boats - Watercraft</LI>
+							<LI>Heavy Trucks, Buses & Other Vehicles</LI>
+						</UL>
+						<UL>
+							<ListTitle>Vehicles</ListTitle>
+							<LI>Cars for Sale</LI>
+							<LI>Cars for Rent</LI>
+							<LI>Tyres, Batteries, Oils, & Accessories</LI>
+							<LI>Car Spare Parts</LI>
+							<LI>Boats - Watercraft</LI>
+							<LI>Heavy Trucks, Buses & Other Vehicles</LI>
+						</UL>
+						<UL>
+							<ListTitle>Vehicles</ListTitle>
+							<LI>Cars for Sale</LI>
+							<LI>Cars for Rent</LI>
+							<LI>Tyres, Batteries, Oils, & Accessories</LI>
+							<LI>Car Spare Parts</LI>
+							<LI>Boats - Watercraft</LI>
+							<LI>Heavy Trucks, Buses & Other Vehicles</LI>
+						</UL>
+						<UL>
+							<ListTitle>Vehicles</ListTitle>
+							<LI>Cars for Sale</LI>
+							<LI>Cars for Rent</LI>
+							<LI>Tyres, Batteries, Oils, & Accessories</LI>
+							<LI>Car Spare Parts</LI>
+							<LI>Boats - Watercraft</LI>
+							<LI>Heavy Trucks, Buses & Other Vehicles</LI>
+						</UL>
+					</CatWr>
+				</AccordionDetails>
+			</Accordion>
+		</Cont>
+	);
 }
 
 export default CatsAccordion

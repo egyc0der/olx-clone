@@ -2,7 +2,7 @@
 	"name": "olx-clone",
 	"version": "0.1.0",
 	"private": true,
-	"homepage": "https://egyc0der.github.io",
+	"homepage": "https://egyc0der.github.io/olx-clone/",
 	"dependencies": {
 		"@emotion/react": "^11.10.0",
 		"@emotion/styled": "^11.10.0",

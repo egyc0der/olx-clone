@@ -9,8 +9,7 @@ import styled from '@emotion/styled';
 
 const Cont = styled.div`
 	padding: 0 1.5rem;
-	background-color: #256d85;
-	color: "white";
+	color: "black";
 	@media (min-width: 1800px) {
 		padding: 0 10rem;
 	}
@@ -28,14 +27,14 @@ const AccordionSummary = st((props) => (
 	"& .MuiAccordionSummary-expandIconWrapper.Mui-expanded": {
 		transform: "rotate(180deg)",
 	},
-	color: 'white',
+	color: 'black',
 }));
 
 
 const CatWr = styled.div`
 	display: flex;
 	flex-wrap: wrap;
-	color: "white";
+	color: "black";
 `;
 
 const UL = styled.ul`
@@ -58,15 +57,15 @@ const LI = styled.li`
 const CatsAccordion = () => {
   return (
 		<Cont>
-			<Accordion sx={{ backgroundColor: "#256D85" }} elevation={0}>
-				<AccordionSummary sx={{ backgroundColor: "#256D85" }}>
+			<Accordion sx={{  }} elevation={0}>
+				<AccordionSummary sx={{  }}>
 					<Typography
-						sx={{ fontSize: "0.8rem", color: "white", fontWeight: 700 }}
+						sx={{ fontSize: "0.8rem", color: "black", fontWeight: 700 }}
 					>
 						ALL CATEGORIES
 					</Typography>
 				</AccordionSummary>
-				<AccordionDetails sx={{color:'white'}}>
+				<AccordionDetails sx={{color:'black'}}>
 					<CatWr>
 						<UL>
 							<ListTitle>Vehicles</ListTitle>

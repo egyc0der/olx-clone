@@ -13,8 +13,7 @@ const GlobalCont = styled.div`
 `;
 const AppCont = styled.div`
 	padding: 0 1.5rem;
-	background-color:#2B4865 ;
-	color:white;
+	color:black;
 	@media (min-width: 1800px) {
 		padding: 0 10rem;
 	}

@@ -1,7 +1,7 @@
-import { Box } from '@mui/material'
-import styled from '@emotion/styled'
-import { Search } from '@mui/icons-material'
-import { Link } from 'react-router-dom';
+import { Box } from "@mui/material";
+import styled from "@emotion/styled";
+import { Search } from "@mui/icons-material";
+import { Link } from "react-router-dom";
 
 const NavCont = styled(Box)`
 	position: sticky;
@@ -16,18 +16,17 @@ const NavCont = styled(Box)`
 	color: white;
 	padding: 0 20px;
 	z-index: 999999;
-	background-color: #002b5b;
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+	background-color: #ffffff;
 	@media (min-width: 1800px) {
 		padding: 0 10rem;
 	}
 `;
 
 const LogoWr = styled.div`
-	width:70px;
+	width: 70px;
 	height: 70px;
-	
-
-`
+`;
 
 const Logo = styled.img`
 	width: 100%;
@@ -47,42 +46,38 @@ const SearchLocWr = styled(Box)`
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	color:white;
+	color: black;
 	padding: 5px;
-	color: #002f34;
-	background-color: #2B4865;
 	@media only screen and (max-width: 390px) {
 		display: none;
 	}
 `;
 const SearchLoc = styled.input`
-    width:100%;
-    height:100%;
-    border:none;
-    outline:none;
-    font-size:1.2rem;
-	color:white;
-    background-color:#2B4865;
-`
+	width: 100%;
+	height: 100%;
+	border: none;
+	outline: none;
+	font-size: 1.2rem;
+	color: black;
+`;
 const SearchItemsWr = styled(Box)`
 	flex: 2;
 	height: 60%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background-color: #2b4865;
 `;
 
 const InputWr = styled.div`
-    width: 100%;
-    height: 100%;
-    border: 0.25px solid black;
-    border-right:none;
-    border-radius: 5px;
-    border-top-right-radius:0;
-    border-bottom-right-radius:0;
-    padding: 5px;
-`
+	width: 100%;
+	height: 100%;
+	border: 0.25px solid black;
+	border-right: none;
+	border-radius: 5px;
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+	padding: 5px;
+`;
 
 const SearchItems = styled.input`
 	width: 100%;
@@ -90,8 +85,7 @@ const SearchItems = styled.input`
 	border: none;
 	outline: none;
 	font-size: 1.2rem;
-	color: white;
-	background-color: #2b4865; ;
+	color: black;
 `;
 const SearchIconWr = styled.div`
 	height: 100%;
@@ -115,20 +109,20 @@ const BtnWr = styled.div`
 	align-items: center;
 	justify-content: center;
 	@media only screen and (max-width: 390px) {
-		position:fixed;
-		top:96%;
-		left:50%;
-		transform:translate(-50%,-50%)
+		position: fixed;
+		top: 96%;
+		left: 50%;
+		transform: translate(-50%, -50%);
 	}
 `;
 const Button = styled.button`
-    background:none;
-    border:none;
-    font-weight:700;
-    cursor: pointer;
-`
+	background: none;
+	border: none;
+	font-weight: 700;
+	cursor: pointer;
+`;
 const Navbar = () => {
-  return (
+	return (
 		<NavCont>
 			<Link to='/'>
 				<LogoWr>
@@ -139,7 +133,7 @@ const Navbar = () => {
 				</LogoWr>
 			</Link>
 			<SearchLocWr sx={{}}>
-				<Search sx={{ fontSize: "40px",color:"white" }} />
+				<Search sx={{ fontSize: "40px", color: "black" }} />
 				<SearchLoc placeholder='' />
 			</SearchLocWr>
 			<SearchItemsWr>
@@ -159,6 +153,6 @@ const Navbar = () => {
 			</BtnWr>
 		</NavCont>
 	);
-}
+};
 
-export default Navbar
+export default Navbar;

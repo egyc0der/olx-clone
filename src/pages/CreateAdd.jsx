@@ -118,125 +118,142 @@ const CreateAdd = () => {
 					name='Title'
 					variant='outlined'
 					label='Title'
-					sx={{ width: "80%" }}
+					color='warning'
+					sx={{ width: "80%", input: { color: "white" } }}
 					onChange={handleChange}
 				/>
 				<TextField
 					name='price'
+					color="warning"
 					variant='outlined'
 					label='Price in EGP'
-					sx={{ width: "80%" }}
+					sx={{ width: "80%" ,input: { color: "white" }}}
 					onChange={handleChange}
 				/>
 				<TextField
 					name='desc'
+					color="warning"
 					variant='outlined'
 					label='Description'
-					sx={{ width: "80%" }}
+					sx={{ width: "80%",input: { color: "white" } }}
 					multiline
 					rows={5}
 					onChange={handleChange}
 				/>
 				<TextField
 					name='mainImage'
+					color="warning"
 					variant='outlined'
 					label='Main Image URL'
-					sx={{ width: "80%" }}
+					sx={{ width: "80%",input: { color: "white" } }}
 					onChange={handleChange}
 				/>
 				<TextField
 					name='otherImages'
+					color="warning"
 					variant='outlined'
 					label='Thumbnails separated with commas'
-					sx={{ width: "80%" }}
+					sx={{ width: "80%" ,input: { color: "white" }}}
 					onChange={handleThumbs}
 				/>
 				<DetailsCont>
 					<Left>
 						<TextField
 							name='Brand'
+							color="warning"
 							variant='outlined'
 							label='Brand'
-							sx={{ width: "90%" }}
+							sx={{ width: "90%",input: { color: "white" } }}
 							onChange={handleChange_details}
 						/>
 						<TextField
 							name='Ad Type'
+							color="warning"
 							variant='outlined'
 							label='Ad Type'
-							sx={{ width: "90%" }}
+							sx={{ width: "90%",input: { color: "white" } }}
 							onChange={handleChange_details}
 						/>
 						<TextField
 							name='Payment Options'
+							color="warning"
 							variant='outlined'
 							label='Payment Options'
-							sx={{ width: "90%" }}
+							sx={{ width: "90%" ,input: { color: "white" }}}
 							onChange={handleChange_details}
 						/>
 						<TextField
 							name='Kilometers'
+							color="warning"
 							variant='outlined'
 							label='Kilometers'
-							sx={{ width: "90%" }}
+							sx={{ width: "90%" ,input: { color: "white" }}}
 							onChange={handleChange_details}
 						/>
 						<TextField
 							name='Condition'
+							color="warning"
 							variant='outlined'
 							label='Condition'
-							sx={{ width: "90%" }}
+							sx={{ width: "90%",input: { color: "white" } }}
 							onChange={handleChange_details}
 						/>
 						<TextField
 							name='Engine Capacity (CC)'
+							color="warning"
 							variant='outlined'
 							label='Engine Capacity (CC)'
-							sx={{ width: "90%" }}
+							sx={{ width: "90%",input: { color: "white" } }}
 							onChange={handleChange_details}
 						/>
 					</Left>
 					<Right>
 						<TextField
 							name='Model'
+							color="warning"
 							variant='outlined'
 							label='Model'
-							sx={{ width: "90%" }}
+							sx={{ width: "90%" ,input: { color: "white" }}}
 							onChange={handleChange_details}
 						/>
 						<TextField
 							name='Body Type'
+							color="warning"
 							variant='outlined'
 							label='Body Type'
-							sx={{ width: "90%" }}
+							sx={{ width: "90%",input: { color: "white" } }}
 							onChange={handleChange_details}
 						/>
 						<TextField
 							name='Fuel Type'
+							color="warning"
 							variant='outlined'
 							label='Fuel Type'
-							sx={{ width: "90%" }}
+							sx={{ width: "90%",input: { color: "white" } }}
 							onChange={handleChange_details}
 						/>
 						<TextField
 							name='Year'
+							color="warning"
 							variant='outlined'
 							label='Year'
-							sx={{ width: "90%" }}
+							sx={{ width: "90%",input: { color: "white" } }}
 							onChange={handleChange_details}
 						/>
 						<TextField
 							name='Transmission Type'
+							color="warning"
 							variant='outlined'
 							label='Transmission Type'
-							sx={{ width: "90%" }}
+							sx={{ width: "90%",input: { color: "white" } }}
 							onChange={handleChange_details}
 						/>
 						<TextField
 							name='Color'
+							color="warning"
 							variant='outlined'
 							label='Color'
-							sx={{ width: "90%" }}
+							sx={{ width: "90%" ,input: { color: "white" }}}
 							onChange={handleChange_details}
 						/>
 					</Right>

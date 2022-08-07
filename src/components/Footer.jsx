@@ -2,10 +2,12 @@ import styled from "@emotion/styled";
 import {  Facebook, Instagram, Twitter, YouTube } from "@mui/icons-material";
 
 const Cont = styled.div`
-	background-color: #002b5b;
-	color: white;
+	color: black;
 	display: flex;
 	padding: 2rem 10rem;
+	box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+		rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+		rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 	@media only screen and (max-width: 390px) {
 		flex-direction: column;
 	} ;
@@ -48,7 +50,7 @@ const SocialIcon = styled.div`
     height:50px;
     border-radius:50%;
     color:black;
-	color:white;
+	color:black;
 `;
 
 const AppsWr = styled.div`
